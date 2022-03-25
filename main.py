@@ -4,7 +4,7 @@
 #
 # (C) 2022 Claudio Campuzano, Quilpue, Chile
 # Released under GNU Public License (GPL)
-# email claudio.capuzano.b@gmail.com
+# email claudio.campuzano.b@gmail.com
 # ----------------------------------------------------------
 
 import json
