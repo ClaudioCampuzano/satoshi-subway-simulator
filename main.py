@@ -67,7 +67,9 @@ class subwayNetwork():
         """Customized network generation.
 
         Using the common white network as a basis, special red 
-        and green networks are generated.
+        and green networks are generated. Eliminating the nodes 
+        that do not correspond, and generating a bridge between 
+        the adjacent nodes of the eliminated one.
 
         Args:
             specialStations (str): Special stations (red or green) 
