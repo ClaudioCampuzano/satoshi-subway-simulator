@@ -55,7 +55,6 @@ class subwayNetwork():
 
             self._networkRed = self.__generateCustomNetwork(networkTopololy['greenStation'])
             self._networkGreen = self.__generateCustomNetwork(networkTopololy['redStation'])
-            return('Networks generated')
                     
         except Exception as e:
             print('Error when generating the network: ',e)
@@ -101,7 +100,7 @@ class subwayNetwork():
         Return:
             str: Search result
         """
-        
+                
         if trainColor != "" and trainColor not in ['green','red']: 
             return('Wrong train color, available green and red')
             
@@ -109,6 +108,8 @@ class subwayNetwork():
         if trainColor == 'green': networkUse = self._networkGreen
         elif trainColor == 'red': networkUse = self._networkRed
         else: networkUse = self._networkWhite
+        
+        if len(networkUse) == 0: return('Empty path, apparently the topology file was not loaded')
             
         if not all (station in networkUse.keys() for station in (initialStation,endStation)): 
             return('Out-of-route stations, check network topology')
@@ -139,7 +140,7 @@ class subwayNetwork():
         
 
 if __name__ == '__main__':
-    var = subwayNetwork('networkTopololy.json')
+    var = subwayNetwork('')
 
     initialStation = input('Enter initial station: ')
     endStation = input('Enter end station: ')
