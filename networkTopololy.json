@@ -1,0 +1,15 @@
+{
+    "adjacentStations": {
+        "A": "B",
+        "B": "A,C",
+        "C": "B,D,G",
+        "D": "C,E",
+        "E": "D,F",
+        "F": "E,I",
+        "G": "C,H",
+        "H": "G,I",
+        "I": "F,H"
+    },
+    "redStation" : "H",
+    "greenStation": "G,I"
+}
