@@ -6,6 +6,7 @@ import pytest
     [
         ('networkTopololy.json','A','F','','Shortest path = A->B->C->D->E->F'),
         ('networkTopololy.json','A','F','red','Shortest path = A->B->C->H->F'),
+        ('networkTopololy.json','F','C','red','Shortest path = F->H->C'),
         ('networkTopololy.json','a','f','','Out-of-route stations, check network topology'),
         ('networkTopololy.json','A','H','green','Out-of-route stations, check network topology'),
         ('networkTopololy.json','A','H','blue','Wrong train color, available green and red'),

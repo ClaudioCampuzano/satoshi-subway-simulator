@@ -8,9 +8,9 @@
 # ----------------------------------------------------------
 
 import json
-from collections import defaultdict
 from math import inf
 import copy
+from collections import defaultdict
 
 class subwayNetwork():
     def __init__(self, fileNetwork):
@@ -140,7 +140,7 @@ class subwayNetwork():
         
 
 if __name__ == '__main__':
-    var = subwayNetwork('')
+    var = subwayNetwork('networkTopololy.json')
 
     initialStation = input('Enter initial station: ')
     endStation = input('Enter end station: ')
