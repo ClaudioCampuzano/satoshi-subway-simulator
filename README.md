@@ -40,10 +40,10 @@ style B fill:#008000
 ```
 
 ## Installation
+    python -m pip install --user virtualenv 
     python -m venv env
     .\env\Scripts\activate
     pip install -r requirements.txt
-
 
 ## Execution
     python ./main.py
